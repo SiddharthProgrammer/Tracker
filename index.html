@@ -1,0 +1,202 @@
+<html ><head>
+	<header>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>Fusion Frame</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</header>
+
+	<body  data-elementor-device-mode="tablet">
+	<div id="page" class="hfeed site">
+	
+			
+				
+						
+					</header>
+	
+				<div data-elementor-type="wp-page" data-elementor-id="9120" class="elementor elementor-9120">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-4a629a1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4a629a1" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+						<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0cc8e37" data-id="0cc8e37" data-element_type="column">
+				<div class="elementor-widget-wrap elementor-element-populated">
+							<div class="elementor-element elementor-element-996a242 elementor-widget elementor-widget-html" data-id="996a242" data-element_type="widget" data-widget_type="html.default">
+					<div class="elementor-widget-container">
+				
+	
+	
+	  
+	  <link rel="stylesheet" href="FusionFrame/leaflet.css">
+	  <style>
+		#map {
+		  height: 500px;
+		}
+	
+		.leaflet-tooltip {
+		  background: rgba(255, 255, 255, 0.8); /* Adjust the transparency (0.8 is semi-transparent) */
+		  border: 1px solid #ccc;
+		  border-radius: 5px;
+		  padding: 10px;
+		}
+	  </style>
+	
+	
+	  <div id="bt">
+		<style>
+			#bt{
+				padding: 20px;
+			}
+			#csvFile{
+				border-radius: 15px;
+				color: #000000;
+			}
+
+			#startSimulation{
+				border-radius: 15px;
+				padding: 5px;
+				background-color: #04f0f8;
+				
+			}
+
+		</style>
+		<input type="file" id="csvFile" accept=".csv">
+		<button id="startSimulation" disabled="">Start Simulation</button>
+	  </div>
+	  <div id="map"  class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" style="position: relative; outline: none;" tabindex="0">
+		<div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+			<div class="leaflet-pane leaflet-tile-pane">
+				<div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+					<div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 18; transform: translate3d(-969px, -765px, 0px) scale(2);"></div>
+				</div>
+			</div>
+				<div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none" class="leaflet-zoom-animated" width="1344" height="600" style="transform: translate3d(-112px, -50px, 0px);" viewBox="-112 -50 1344 600"><g><path class="leaflet-interactive" stroke="blue" stroke-opacity="1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" d="M0 0"></path></g></svg></div>
+				<div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(94141px, 61666.5px, 0px) scale(256);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a></div></div></div><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(-436px, 0px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"></div></div><div class="leaflet-pane leaflet-shadow-pane"></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><img src="https://getreferpro.com/wp-content/uploads/2023/10/drone.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -16px; margin-top: -16px; width: 32px; height: 32px; transform: translate3d(823px, 250px, 0px); z-index: 250;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"><div class="leaflet-popup  leaflet-zoom-animated" style="opacity: 1; transform: translate3d(823px, 250px, 0px); bottom: -7px; left: -84px;"><div class="leaflet-popup-content-wrapper"><div class="leaflet-popup-content" style="width: 128px;">UIN: UIN<br>Latitude: 11.029964<br>Longitude: 76.977852<br>Speed: 0.3704 m/s<br>Time Stamp: 22.38.00<br>Battery Percentage: 0%<br>Elevation: 432.2</div></div><div class="leaflet-popup-tip-container"><div class="leaflet-popup-tip"></div></div><a class="leaflet-popup-close-button" href="#close">×</a></div></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(9.58083e+07px, 6.2971e+07px, 0px) scale(262144);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in leaflet-disabled" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a></div></div></div></div>
+	
+	  <script src="FusionFrame/leaflet.js"></script>
+	  <script>
+		var map = L.map('map').setView([13.0827, 80.2707], 5); // Chennai, India
+	
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		  maxZoom: 19,
+		}).addTo(map);
+	
+		var dronePath = L.polyline([], { color: 'blue' }).addTo(map);
+		var droneMarker = L.marker([0, 0], {
+		  icon: L.icon({
+			iconUrl: 'https://getreferpro.com/wp-content/uploads/2023/10/drone.png',
+			iconSize: [32, 32], // Adjust the size as needed
+		  }),
+		}).addTo(map);
+		var popup = L.popup();
+	
+		var csvData = [];
+		var currentIndex = 0;
+		var simulationInterval;
+	
+		document.getElementById('csvFile').addEventListener('change', loadCsv);
+	
+		document.getElementById('startSimulation').addEventListener('click', function () {
+		  this.disabled = true;
+		  simulationInterval = setInterval(simulateDroneMovement, 10);
+		});
+	
+		function loadCsv(e) {
+		  csvData = [];
+		  currentIndex = 0;
+		  dronePath.setLatLngs([]);
+		  droneMarker.setLatLng([0, 0]);
+		  map.setView([13.0827, 80.2707], 5);
+	
+		  var reader = new FileReader();
+		  reader.readAsText(e.target.files[0]);
+		  
+		  reader.onload = function (e) {
+			var csv = e.target.result;
+			var lines = csv.split('\n');
+			for (var i = 1; i < lines.length; i++) {
+			  var parts = lines[i].split(',');
+			  if (parts.length >= 7) {
+				csvData.push({
+				  UIN: parts[0],
+				  Latitude: parts[1],
+				  Longitude: parts[2],
+				  Speed: parts[3],
+				  TimeStamp: parts[4],
+				  BatteryPercentage: parts[5],
+				  Elevation: parts[6],
+				});
+			  }
+			}
+			document.getElementById('startSimulation').disabled = false;
+		  };
+		}
+	
+		function simulateDroneMovement() {
+		  if (currentIndex < csvData.length) {
+			var dataPoint = csvData[currentIndex];
+			var lat = parseFloat(dataPoint.Latitude);
+			var lon = parseFloat(dataPoint.Longitude);
+			var speed = parseFloat(dataPoint.Speed);
+	
+			// Check if the drone's location has changed significantly
+			if (
+			  droneMarker.getLatLng().lat !== lat ||
+			  droneMarker.getLatLng().lng !== lon
+			) {
+			  droneMarker.setLatLng([lat, lon]);
+			  dronePath.addLatLng([lat, lon]);
+			  map.flyTo([lat, lon], 19);
+			}
+	
+			// Set the content of the pop-up with CSV parameters
+			popup
+			  .setContent(
+				`UIN: ${dataPoint.UIN}<br>` +
+				`Latitude: ${dataPoint.Latitude}<br>` +
+				`Longitude: ${dataPoint.Longitude}<br>` +
+				`Speed: ${dataPoint.Speed} m/s<br>` +
+				`Time Stamp: ${dataPoint.TimeStamp}<br>` +
+				`Battery Percentage: ${dataPoint.BatteryPercentage}%<br>` +
+				`Elevation: ${dataPoint.Elevation}`
+			  )
+			  .setLatLng([lat, lon])
+			  .openOn(map);
+	
+			currentIndex++;
+		  } else {
+			clearInterval(simulationInterval);
+		  }
+		}
+	  </script>
+	
+			</div>
+					</div>
+						</div>
+			</div>
+						</div>
+			</section>
+					</div>
+			
+			
+		</div><!-- #page -->
+	<script type="text/javascript">
+	var inboxs = new Array();
+	inboxs['hidezeronumberitem'] = "yes";
+	inboxs['selectors'] = '.tooltips_list > span';
+	inboxs['navitemdefaultsize'] = '12px'; 
+	inboxs['navitemselectedsize'] = '14px';
+	inboxs['number'] = "no";
+	
+	</script>
+	
+	<script type="text/javascript">
+	var inboxs = new Array();
+	inboxs['language'] = "en";
+	inboxs['navitemselectedsize'] = '18px';
+	inboxs['selectors'] = '.tooltips_list > span';
+	inboxs['navitemdefaultsize'] = '12px';
+	inboxs['number'] = "yes";
+	
+	</script>
+	
+				<!-- Vidjet Script - End -->
+				
